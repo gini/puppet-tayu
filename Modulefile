@@ -1,5 +1,5 @@
 name         'puppet-tayu'
-version      '0.1'
+version      '0.1.0'
 author       'Jochen Schalanda'
 license      'Apache 2.0'
 project_page 'https://github.com/smarchive/puppet-tayu'
