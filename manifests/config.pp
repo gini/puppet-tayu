@@ -16,7 +16,7 @@ class tayu::config {
 
   $port            = $tayu::port
   $username        = $tayu::username
-  $puppetdb_server = $tayu::puppetdb_service
+  $puppetdb_server = $tayu::puppetdb_server
   $puppetdb_port   = $tayu::puppetdb_port
   $allowed_tags    = $tayu::allowed_tags
 
