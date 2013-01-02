@@ -1,0 +1,7 @@
+:puppetdb_server: <%= puppetdb_server %>
+:puppetdb_port: <%= puppetdb_port %>
+:username: <%= username %>
+:allowed_tags:
+<% allowed_tags.each do |allowed_tag| -%>
+  <%= allowed_tag %>
+<% end -%>
