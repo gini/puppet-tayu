@@ -1,4 +1,4 @@
-name         'puppet-tayu'
+name         'smarchive-tayu'
 version      '0.1.0'
 author       'Jochen Schalanda'
 license      'Apache 2.0'
