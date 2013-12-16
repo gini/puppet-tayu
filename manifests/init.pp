@@ -7,20 +7,23 @@
 # [*version*]
 #   The version of tayu to install
 #
+# [*host*]
+#   The host or IP address on which tayu will listen
+#
 # [*port*]
-#   The version of tayu to install
+#   The port on which tayu will listen
 #
 # [*username*]
-#   The version of tayu to install
+#   The username under which tayu will run
 #
 # [*puppetdb_server*]
-#   The version of tayu to install
+#   The hostname or IP address of PuppetDB
 #
 # [*puppetdb_port*]
-#   The version of tayu to install
+#   The port on which PuppetDB listens
 #
 # [*allowed_tags*]
-#   An array of NTP servers to use on this node
+#   An array of facts/tags to output
 #
 # [*enable*]
 #   Should the service be enabled during boot time?
@@ -29,6 +32,7 @@
 #   Should the service be started by Puppet
 class tayu(
   $version         = 'present',
+  $host            = 'localhost',
   $port            = 8144,
   $username        = 'rundeck',
   $puppetdb_server = 'localhost',

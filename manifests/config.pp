@@ -14,6 +14,7 @@ class tayu::config {
     mode   => '0755',
   }
 
+  $host            = $tayu::host
   $port            = $tayu::port
   $username        = $tayu::username
   $puppetdb_server = $tayu::puppetdb_server
