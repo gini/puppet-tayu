@@ -12,7 +12,7 @@
 # Do NOT "set -e"
 
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
-PATH=/var/lib/gems/1.8/bin:/sbin:/usr/sbin:/bin:/usr/bin
+PATH="${PATH}:$(ruby -rubygems -e 'puts Gem.bindir')"
 DESC="Webservice for integrating PuppetDB with Rundeck"
 NAME=$(basename $0)
 DAEMON=$(which tayu)
