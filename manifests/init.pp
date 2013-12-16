@@ -41,13 +41,6 @@ class tayu(
   $enable          = true,
   $start           = true,
 ) {
-
-  validate_string($username)
-  validate_string($puppetdb_server)
-  validate_array($allowed_tags)
-  validate_bool($enable)
-  validate_bool($start)
-
   class{'tayu::install': } ->
   class{'tayu::config': } ~>
   class{'tayu::service': } ->
